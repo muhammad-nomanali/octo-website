@@ -28,10 +28,8 @@
 }
 /* hero section start */
 .hero-section {
-  background-image: url(./asset/images/octo-hero.webp);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+
+background-color: black;
   height: 100vh;
 }
 .hero-section .hero-content-sec {
@@ -101,16 +99,13 @@
 }
 /* about section */
 .about-section {
-  background-image: url(./asset/images/second.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+ padding-bottom: 70px;
 }
 .about-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   padding-top: 40px;
   text-align: center;
