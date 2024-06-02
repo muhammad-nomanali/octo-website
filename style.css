@@ -264,9 +264,11 @@
 }
 /* chart section */
 .chart-section {
-  background-color: black;
-  color: #f49742;
-  padding-bottom: 30px;
+ background: url(./asset/images/chart.jpg);
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+  height: 100vh;
 }
 .chart-section h2 {
   font-size: 70px;
@@ -286,22 +288,16 @@
   padding-bottom: 30px;
 }
 
-.chart-images {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 .chart-images .image1 {
   width: 25%;
-  padding-top: 10px;
-  padding-bottom: 80px;
+ 
 }
-.chart-images .image1 img {
+ .image1 img {
   width: 100%;
   transition: all ease 0.5s;
 }
-.chart-images .image1 img:hover {
+ .image1 img:hover {
   scale: 1.1;
   transition: all ease 0.5s;
 }
