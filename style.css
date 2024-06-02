@@ -53,6 +53,13 @@
   transition: all ease 0.5s;
   opacity: 0;
 }
+.navbar .nav-item button{
+  background-color: #f49742;
+  color: white;
+  border: none;
+  text-transform: capitalize;
+  border-radius: 50px;
+}
 .navbar .nav-item .about:hover::before {
   display: block;
   transform: rotate(220deg);
@@ -101,14 +108,18 @@
 }
 /* hero section start */
 .hero-section {
-  background-color: black;
+ background-image:url(./asset/images/hero-baground.jpg);
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
   height: 100vh;
 
 }
 .hero-section .hero-content h2{
   text-transform: capitalize;
-  font-size: 45px;
+  font-size: 50px;
   padding-top: 60px;
+  line-height: 60px;
 }
  .hero-img{
   width: 100%;
@@ -127,6 +138,9 @@
 }
 .input-groups p{
   margin: 0;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+  overflow: hidden;
 }
 .input-groups button{
   padding: 6px 20px;
@@ -141,8 +155,10 @@
 }
 .input-groups i{
   padding-right: 10px;
-  color: #76bfdf;
+  color: black;
   cursor: pointer;
+  font-weight: bolder;
+  font-size: 30px;
 }
 .hero-icon i{
   font-size: 40px;
@@ -177,7 +193,14 @@
 }
 /* about section */
 .about-section {
-  padding-bottom: 70px;
+
+    background-image:url(./asset/images/about-sec.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+     height: 100vh;
+   
+
 }
 .about-container {
   display: flex;
@@ -203,6 +226,9 @@
 }
 .about-container .about-para h2 {
   font-size: 50px;
+}
+.about-container .about-para h2 span{
+  font-weight: bolder;
 }
 .about-container .about-para p {
   font-size: 30px;
@@ -294,7 +320,7 @@
 }
 /* community section */
 .community-section {
-  background-color: #062c38;
+background: linear-gradient(to right,brown,rgb(167, 90, 103),purple,gray);
   padding: 30px 0;
 }
 .comunity-icons h2 {
@@ -367,7 +393,10 @@
   gap: 10px;
 } */
 .tokenomics-section {
-  background-color: brown;
+  background-image: url(./asset/images/tokeno.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .tokenomics-section h2 {
   font-size: 70px;
@@ -448,4 +477,70 @@
     height: 25vmin;
     font-size: 8px;
   }
+}
+/* roadmap section */
+.roadmap-section {
+  padding: 40px 0;
+  background:linear-gradient(to right,blue,red,black,orange);
+}
+.roadmap-section .roadmap-content h2{
+  text-transform: capitalize;
+  font-size: 35px;
+  color: white;
+}
+.roadmap-section .roadmap-content p{
+  text-transform: capitalize;
+  font-size: 22px;
+  color: white;
+}
+.roadmap-section .roadmap-content button{
+padding: 8px 30px;
+text-transform: capitalize;
+font-size: 22px; border: none;
+background-color: black;
+color: white;
+border-radius: 50px;
+}
+.phase-content{
+  height: 50vh;
+  overflow-y: scroll;
+ 
+ 
+
+}
+.phase-content h4{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.phase-content::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+.phase-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.phase-content::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.phase-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+ 
+}
+/*  */
+.phase-card{
+  background-image: url(./asset/images/tokeno.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+margin-top: 10px;
+color: white;
+width: 80%;
+padding: 30px;
 }
