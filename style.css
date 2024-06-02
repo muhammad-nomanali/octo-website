@@ -117,6 +117,37 @@
 .hero-img img{
   width: 100%;
 }
+.input-groups{
+  margin-top: 70px;
+  border: 2px solid white;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.input-groups p{
+  margin: 0;
+}
+.input-groups button{
+  padding: 6px 20px;
+  border-radius: 50px;
+  text-transform: capitalize;
+  box-shadow: none;
+  outline: none;
+  background-color: #76bfdf;
+  color: white;
+  border: none;
+
+}
+.input-groups i{
+  padding-right: 10px;
+  color: #76bfdf;
+  cursor: pointer;
+}
+.hero-icon i{
+  font-size: 40px;
+  color: white;
+}
 /* media query hero section */
 @media screen and (max-width: 757px) {
   .hero-section {
@@ -165,7 +196,7 @@
   text-transform: uppercase;
   font-weight: 900;
   color: black;
-  text-shadow: 6px 2px red;
+
   border-bottom: 2px solid black;
   width: 30%;
   margin: 0 auto;
@@ -270,7 +301,7 @@
   font-size: 70px;
   text-transform: capitalize;
   color: white;
-  text-shadow: 6px 2px red;
+
   padding-bottom: 30px;
 }
 .comunity-icons span {
@@ -300,13 +331,12 @@
   font-size: 70px;
   text-transform: capitalize;
   color: white;
-  text-shadow: 6px 2px red;
 }
 .contact-adress h2 {
   font-size: 70px;
   text-transform: capitalize;
   color: white;
-  text-shadow: 6px 2px red;
+
 }
 .contact-adress p {
   background-color: #2e9cbc;
@@ -343,7 +373,7 @@
   font-size: 70px;
   text-transform: capitalize;
   color: white;
-  text-shadow: 6px 2px red;
+
 }
 .tokenomics-section .wrapper {
   width: 80%;
