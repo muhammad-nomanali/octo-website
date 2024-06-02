@@ -320,7 +320,7 @@
 }
 /* community section */
 .community-section {
-background: linear-gradient(to right,brown,rgb(167, 90, 103),purple,gray);
+background-color: #555;
   padding: 30px 0;
 }
 .comunity-icons h2 {
@@ -481,7 +481,7 @@ background: linear-gradient(to right,brown,rgb(167, 90, 103),purple,gray);
 /* roadmap section */
 .roadmap-section {
   padding: 40px 0;
-  background:linear-gradient(to right,blue,red,black,orange);
+background-color: black;
 }
 .roadmap-section .roadmap-content h2{
   text-transform: capitalize;
@@ -497,8 +497,8 @@ background: linear-gradient(to right,brown,rgb(167, 90, 103),purple,gray);
 padding: 8px 30px;
 text-transform: capitalize;
 font-size: 22px; border: none;
-background-color: black;
-color: white;
+background-color: white;
+color: black;
 border-radius: 50px;
 }
 .phase-content{
@@ -507,6 +507,16 @@ border-radius: 50px;
  
  
 
+}
+marquee{
+  font-size: 20px;
+  text-transform: uppercase;
+}
+marquee span{
+ margin: 0 60px;
+}
+.phase-content li{
+  list-style-type: none;
 }
 .phase-content h4{
   text-transform: uppercase;
