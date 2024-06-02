@@ -1,3 +1,12 @@
+
+// scripts.js
+
+
+
+// count
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const counters = document.querySelectorAll('.num');
     counters.forEach(counter => {
