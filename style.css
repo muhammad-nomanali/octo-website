@@ -194,11 +194,12 @@
 /* about section */
 .about-section {
 
-    background-image:url(./asset/images/about-sec.jpg);
+    background-image:url(./asset/images/vecteezy_abstract-technology-futuristic-neon-circle-glowing-blue-and_13681213.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
      height: 100vh;
+     color: white;
    
 
 }
