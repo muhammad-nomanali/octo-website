@@ -13,25 +13,32 @@ document.addEventListener("DOMContentLoaded", function() {
         const updateCount = () => {
             const target = counter.getAttribute('data-val');
             const suffix = target.includes('%') ? '%' : '';
-            const targetValue = parseFloat(target.replace('%', ''));
-            const count = parseFloat(counter.innerText.replace('%', ''));
+            const targetValue = parseFloat(target.replace('%', '').replace(/,/g, ''));
+            const count = parseFloat(counter.innerText.replace('%', '').replace(/,/g, ''));
             const speed = 100; // Change animation speed here
             const increment = (targetValue - count) / speed;
 
             if (count < targetValue) {
-                counter.innerText = `${Math.ceil(count + increment)}${suffix}`;
+                counter.innerText = suffix 
+                    ? `${Math.ceil(count + increment)}${suffix}`
+                    : Math.ceil(count + increment).toLocaleString();
                 setTimeout(updateCount, 10); // Increase delay for smoother animation
             } else if (count > targetValue) {
-                counter.innerText = `${Math.floor(count + increment)}${suffix}`;
+                counter.innerText = suffix 
+                    ? `${Math.floor(count + increment)}${suffix}`
+                    : Math.floor(count + increment).toLocaleString();
                 setTimeout(updateCount, 10); // Increase delay for smoother animation
             } else {
-                counter.innerText = `${targetValue}${suffix}`;
+                counter.innerText = suffix 
+                    ? `${targetValue}${suffix}`
+                    : targetValue.toLocaleString();
             }
         };
 
         updateCount();
     });
 });
+
 
 
 // 
