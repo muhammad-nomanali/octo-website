@@ -268,7 +268,7 @@
  background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
-  height: 100vh;
+ 
 }
 .chart-section h2 {
   font-size: 70px;
@@ -389,10 +389,7 @@ background-color: #555;
   gap: 10px;
 } */
 .tokenomics-section {
-  background-image: url(./asset/images/tokeno.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+ background-color: black;
 }
 .tokenomics-section h2 {
   font-size: 70px;
@@ -476,8 +473,11 @@ background-color: #555;
 }
 /* roadmap section */
 .roadmap-section {
-  padding: 40px 0;
-background-color: black;
+  background-image: url(./asset/images/road.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 0;
 }
 .roadmap-section .roadmap-content h2{
   text-transform: capitalize;
@@ -550,4 +550,26 @@ margin-top: 10px;
 color: white;
 width: 80%;
 padding: 30px;
+}
+
+/* disclamir */
+.disclamir-sec{
+  background-image: url(./asset/images/footer.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+
+}
+.disclaimir-content{
+padding: 100px 0;
+}
+.disclaimir-content h2{
+  font-size: 50px
+}
+.disclaimir-content p{
+  width: 60%;
+  margin: 0 auto;
+  font-size: 25px;
+  padding-top: 30px;
 }
