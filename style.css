@@ -5,12 +5,14 @@
   box-sizing: border-box;
 }
 
-
+@font-face {
+  font-family: "titan";
+  src: url(./asset/fonts/TitanOne-Regular.ttf);
+}
 .navbar .navbar-brand span {
   font-size: 50px;
   text-transform: uppercase;
   color: white;
-
 }
 .navbar .nav-item .nav-link {
   font-size: 24px;
@@ -53,7 +55,7 @@
   transition: all ease 0.5s;
   opacity: 0;
 }
-.navbar .nav-item button{
+.navbar .nav-item button {
   background-color: #f49742;
   color: white;
   border: none;
@@ -108,27 +110,26 @@
 }
 /* hero section start */
 .hero-section {
- background-image:url(./asset/images/hero-baground.jpg);
- background-position: center;
- background-size: cover;
- background-repeat: no-repeat;
+  background-image: url(./asset/images/hero-baground.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
-
 }
-.hero-section .hero-content h2{
+.hero-section .hero-content h2 {
   text-transform: capitalize;
   font-size: 50px;
   padding-top: 60px;
   line-height: 60px;
 }
- .hero-img{
+.hero-img {
   width: 100%;
- padding-top: 50px;
+  padding-top: 50px;
 }
-.hero-img img{
+.hero-img img {
   width: 100%;
 }
-.input-groups{
+.input-groups {
   margin-top: 70px;
   border: 2px solid white;
   border-radius: 50px;
@@ -136,13 +137,13 @@
   justify-content: space-between;
   padding: 10px;
 }
-.input-groups p{
+.input-groups p {
   margin: 0;
   text-overflow: ellipsis;
-  white-space:nowrap;
+  white-space: nowrap;
   overflow: hidden;
 }
-.input-groups button{
+.input-groups button {
   padding: 6px 20px;
   border-radius: 50px;
   text-transform: capitalize;
@@ -151,16 +152,15 @@
   background-color: #76bfdf;
   color: white;
   border: none;
-
 }
-.input-groups i{
+.input-groups i {
   padding-right: 10px;
   color: black;
   cursor: pointer;
   font-weight: bolder;
   font-size: 30px;
 }
-.hero-icon i{
+.hero-icon i {
   font-size: 40px;
   color: white;
 }
@@ -193,15 +193,12 @@
 }
 /* about section */
 .about-section {
-
-    background-image:url(./asset/images/vecteezy_abstract-technology-futuristic-neon-circle-glowing-blue-and_13681213.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-     height: 100vh;
-     color: white;
-   
-
+  background-image: url(./asset/images/vecteezy_abstract-technology-futuristic-neon-circle-glowing-blue-and_13681213.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
 }
 .about-container {
   display: flex;
@@ -219,21 +216,22 @@
   font-size: 70px;
   text-transform: uppercase;
   font-weight: 900;
-  color: black;
+  color: white;
 
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
   width: 30%;
   margin: 0 auto;
 }
 .about-container .about-para h2 {
   font-size: 50px;
 }
-.about-container .about-para h2 span{
+.about-container .about-para h2 span {
   font-weight: bolder;
 }
 .about-container .about-para p {
-  font-size: 30px;
+  font-size: 28px;
   overflow: hidden;
+  font-weight: 300;
 }
 /* media queru about */
 @media screen and (max-width: 800px) {
@@ -265,11 +263,10 @@
 }
 /* chart section */
 .chart-section {
- background: url(./asset/images/chart.jpg);
- background-position: center;
- background-size: cover;
- background-repeat: no-repeat;
- 
+  background: url(./asset/images/chart.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .chart-section h2 {
   font-size: 70px;
@@ -289,16 +286,14 @@
   padding-bottom: 30px;
 }
 
-
 .chart-images .image1 {
   width: 25%;
- 
 }
- .image1 img {
+.image1 img {
   width: 100%;
   transition: all ease 0.5s;
 }
- .image1 img:hover {
+.image1 img:hover {
   scale: 1.1;
   transition: all ease 0.5s;
 }
@@ -317,7 +312,7 @@
 }
 /* community section */
 .community-section {
-background-color: #555;
+  background-color: #555;
   padding: 30px 0;
 }
 .comunity-icons h2 {
@@ -359,7 +354,6 @@ background-color: #555;
   font-size: 70px;
   text-transform: capitalize;
   color: white;
-
 }
 .contact-adress p {
   background-color: #2e9cbc;
@@ -390,13 +384,17 @@ background-color: #555;
   gap: 10px;
 } */
 .tokenomics-section {
- background-color: black;
+  background-color: black;
 }
 .tokenomics-section h2 {
-  font-size: 70px;
-  text-transform: capitalize;
-  color: white;
+  color: #ffffff;
+  font-family: "titan";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
 
+  stroke: #b31942;
+  text-shadow: 5px 5px 0px #b31942;
 }
 .tokenomics-section .wrapper {
   width: 80%;
@@ -404,10 +402,11 @@ background-color: #555;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 0;
+  /* padding: 80px 0; */
+  padding-bottom: 80px;
 }
 .containers {
-  width: 50vmin;
+  width: 55vmin;
   height: 28vmin;
   display: flex;
   flex-direction: column;
@@ -416,7 +415,6 @@ background-color: #555;
   position: relative;
   font-size: 16px;
   border-radius: 0.5em;
-
   overflow: hidden;
 }
 .tokenomics-section i {
@@ -429,8 +427,18 @@ background-color: #555;
   color: #ffffff;
   display: grid;
   place-items: center;
-  font-weight: 600;
-  font-size: 3em;
+  font-size: 50px;
+  color: #b31942;
+  font-family: "titan";
+  font-weight: 400;
+  font-style: normal;
+  stroke: #ffffff;
+  text-shadow: 3px 3px 0px #ffffff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  
+ 
 }
 .tokenomics-section span.text {
   color: #e0e0e0;
@@ -480,50 +488,47 @@ background-color: #555;
   background-repeat: no-repeat;
   padding: 50px 0;
 }
-.roadmap-section .roadmap-content h2{
+.roadmap-section .roadmap-content h2 {
   text-transform: capitalize;
   font-size: 45px;
   color: white;
 }
-.roadmap-section .roadmap-content p{
+.roadmap-section .roadmap-content p {
   text-transform: capitalize;
   font-size: 28px;
   color: white;
 }
-.roadmap-section .roadmap-content button{
-padding: 8px 30px;
-text-transform: capitalize;
-font-size: 22px; border: none;
-background-color: white;
-color: black;
-border-radius: 50px;
+.roadmap-section .roadmap-content button {
+  padding: 8px 30px;
+  text-transform: capitalize;
+  font-size: 22px;
+  border: none;
+  background-color: white;
+  color: black;
+  border-radius: 50px;
 }
-.phase-content{
+.phase-content {
   height: 50vh;
   overflow-y: scroll;
- 
- 
-
 }
-marquee{
+marquee {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
 }
-marquee span{
- margin: 0 60px;
+marquee span {
+  margin: 0 60px;
 }
-.phase-content li{
+.phase-content li {
   list-style-type: none;
 }
-.phase-content h4{
+.phase-content h4 {
   text-transform: uppercase;
   text-align: center;
 }
 
 .phase-content::-webkit-scrollbar {
   width: 10px;
-
 }
 
 /* Track */
@@ -539,38 +544,42 @@ marquee span{
 /* Handle on hover */
 .phase-content::-webkit-scrollbar-thumb:hover {
   background: #555;
- 
 }
 /*  */
-.phase-card{
+.phase-card {
   background-image: url(./asset/images/tokeno.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-margin-top: 10px;
-color: white;
-width: 80%;
-padding: 30px;
+  margin-top: 10px;
+  color: white;
+  width: 80%;
+  padding: 30px;
 }
 
 /* disclamir */
-.disclamir-sec{
+.disclamir-sec {
   background-image: url(./asset/images/footer.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-
 }
-.disclaimir-content{
-padding: 100px 0;
+.disclaimir-content {
+  padding: 100px 0;
 }
-.disclaimir-content h2{
-  font-size: 50px
+.disclaimir-content h2 {
+  font-size: 50px;
 }
-.disclaimir-content p{
+.disclaimir-content p {
   width: 60%;
   margin: 0 auto;
   font-size: 25px;
   padding-top: 30px;
+}
+.disclaimir-content h4 {
+  border-top: 2px solid white;
+  margin-top: 40px;
+  padding-top: 20px;
+  text-transform: uppercase;
 }
