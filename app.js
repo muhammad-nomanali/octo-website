@@ -11,25 +11,31 @@ document.addEventListener("DOMContentLoaded", function() {
     const counters = document.querySelectorAll('.num');
     counters.forEach(counter => {
         const updateCount = () => {
-            const target = +counter.getAttribute('data-val');
-            const count = +counter.innerText;
-            const speed = 100; // change animation speed here
-            const increment = (target - count) / speed;
+            const target = counter.getAttribute('data-val');
+            const suffix = target.includes('%') ? '%' : '';
+            const targetValue = parseFloat(target.replace('%', ''));
+            const count = parseFloat(counter.innerText.replace('%', ''));
+            const speed = 100; // Change animation speed here
+            const increment = (targetValue - count) / speed;
 
-            if (count < target) {
-                counter.innerText = Math.ceil(count + increment);
-                setTimeout(updateCount, 1);
-            } else if (count > target) {
-                counter.innerText = Math.floor(count + increment);
-                setTimeout(updateCount, 1);
+            if (count < targetValue) {
+                counter.innerText = `${Math.ceil(count + increment)}${suffix}`;
+                setTimeout(updateCount, 10); // Increase delay for smoother animation
+            } else if (count > targetValue) {
+                counter.innerText = `${Math.floor(count + increment)}${suffix}`;
+                setTimeout(updateCount, 10); // Increase delay for smoother animation
             } else {
-                counter.innerText = target;
+                counter.innerText = `${targetValue}${suffix}`;
             }
         };
 
         updateCount();
     });
 });
+
+
+// 
+
 // copy address
 function copyToClipboard() {
     const contractAddress = document.getElementById("contract-address").innerText;

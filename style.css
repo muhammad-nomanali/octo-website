@@ -23,6 +23,9 @@
 .navbar .nav-item {
   position: relative;
 }
+.navbar-toggler{
+  background-color: white !important;
+}
 .navbar .nav-item .nav-link::before {
   content: "";
   position: absolute;
@@ -165,30 +168,19 @@
   color: white;
 }
 /* media query hero section */
-@media screen and (max-width: 757px) {
-  .hero-section {
-    height: 80vh;
-  }
-  .hero-section .hero-content-sec h4 {
-    font-size: 40px;
-  }
-  .hero-section .hero-content-sec h2 {
-    font-size: 50px;
+@media screen and (max-width:800px) {
+  .hero-section{
+height: fit-content;
   }
 }
-@media screen and (max-width: 535px) {
-  .hero-section {
-    height: 60vh;
-  }
-  .hero-section .hero-content-sec h4 {
-    padding-top: 30px;
+
+@media screen and (max-width:500px) {
+  .hero-section .hero-content h2{
     font-size: 30px;
+    padding-top: 10px;
   }
-  .hero-section .hero-content-sec h2 {
-    font-size: 40px;
-  }
-  .hero-section .hero-content-sec {
-    transform: translateY(80px);
+  .input-groups p{
+    padding-left: 10px;
   }
 }
 /* about section */
@@ -234,31 +226,36 @@
   font-weight: 300;
 }
 /* media queru about */
-@media screen and (max-width: 800px) {
-  .about-container {
-    width: 80% !important;
-    margin: 0 auto;
+@media screen and (max-width:800px) {
+  .about-section{
+height: fit-content;
   }
   .about-container .about-heading h2 {
-    width: 60%;
-    margin: 0 auto;
+    width: fit-content;
+    font-size: 50px;
   }
-}
-@media screen and (max-width: 500px) {
-  .about-container {
-    width: 90% !important;
-    margin: 0 auto;
+  .about-container .about-para p{
+    line-height: 40px;
+    font-size: 22px;
   }
-  .about-container .about-para p {
-    font-size: 20px;
-    overflow: hidden;
-  }
-  .about-container .about-para h2 {
+  .about-container .about-para h2{
     font-size: 40px;
   }
+}
+@media screen and (max-width:500px) {
+  .about-section{
+height: fit-content;
+  }
   .about-container .about-heading h2 {
-    width: 100%;
-    margin: 0 auto;
+    width: fit-content;
+    font-size: 40px;
+  }
+  .about-container .about-para p{
+    line-height: 30px;
+    font-size: 18px;
+  }
+  .about-container .about-para h2{
+    font-size: 30px;
   }
 }
 /* chart section */
@@ -299,15 +296,30 @@
 }
 /* mediA Query */
 @media screen and (max-width: 800px) {
-  .chart-section h2 {
-    width: 60%;
+  .chart-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+ .image1 {
+    width:80%;
     margin: 0 auto;
+  }
+ .image1 img {
+    width:100% !important;
   }
 }
 @media screen and (max-width: 500px) {
-  .chart-section h2 {
-    width: 100%;
+  .chart-section{
+    padding-bottom: 60px;
+  }
+  .image1 {
+    width:60%;
     margin: 0 auto;
+  }
+ .image1 img {
+    width:100% !important;
   }
 }
 /* community section */
@@ -445,8 +457,9 @@
   font-size: 30px;
   text-align: center;
   pad: 0.7em 0;
-  font-weight: 400;
+  font-weight: 900;
   line-height: 0;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 1024px) {
   .wrapper {
@@ -478,6 +491,28 @@
     width: 100%;
     height: 25vmin;
     font-size: 8px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .tokenomics-section h2{
+    font-size: 40px;
+  }
+  .containers{
+  height: 28vmin;
+  }
+  .tokenomics-section span.text {
+    color: #e0e0e0;
+    font-size: 20px;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 900;
+    line-height: 0;
+    text-transform: uppercase;
+  }
+  .tokenomics-section span.num {
+  
+    font-size: 30px;
+    
   }
 }
 /* roadmap section */
@@ -556,7 +591,11 @@ marquee span {
   width: 80%;
   padding: 30px;
 }
-
+@media screen and (max-width:500px) {
+  .roadmap-section .roadmap-content button{
+    margin: 20px 0;
+  }
+}
 /* disclamir */
 .disclamir-sec {
   background-image: url(./asset/images/footer.jpg);
@@ -566,20 +605,29 @@ marquee span {
   color: white;
 }
 .disclaimir-content {
-  padding: 100px 0;
+  padding: 40px 0;
 }
 .disclaimir-content h2 {
-  font-size: 50px;
+  font-size: 40px;
 }
 .disclaimir-content p {
   width: 60%;
   margin: 0 auto;
-  font-size: 25px;
-  padding-top: 30px;
+  font-size: 22px;
+  padding-top: 20px;
 }
 .disclaimir-content h4 {
   border-top: 2px solid white;
   margin-top: 40px;
   padding-top: 20px;
   text-transform: uppercase;
+}
+/* media query */
+@media screen and (max-width:500px) {
+  .disclaimir-content p {
+    width: 100%;
+  
+    font-size: 18px;
+    padding-top: 20px;
+  }
 }
